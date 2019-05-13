@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-clipboardswift",
-    "version": "2.1.0",
+    "version": "0.1.0",
     "description": "Use Copy to Clipboard via Swift",
     "cordova": {
       "id": "cordova-plugin-clipboardswift",
