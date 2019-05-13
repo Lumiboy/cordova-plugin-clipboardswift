@@ -1,31 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.zel.copy"
-        version="0.1.0">
-  <name>Clipboard</name>
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin
+    id="cordova-plugin-clipboardswift"
+    version="0.1.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+
+  <name>Copy to Clipboard (Swift)</name>
+
+  <author>Lumi Ibishi</author>
+
+  <description>Use Copy to Clipboard via Swift</description>
+
+  <keywords>Copy to Clipboard, Clipboard, Copy, Swift</keywords>
+
+  <license>MIT</license>
 
   <engines>
-    <engine name="cordova" version=">=3.4.0"/>
+    <engine name="cordova" version=">=3.5.0"/>
   </engines>
 
-  <asset src="www/copy.js" target="js/copy.js"/>
-
-  <js-module src="www/copy.js" name="copy">
-    <clobbers target="copy" />
+  <js-module name="Copy" src="www/Copy.js">
+    <clobbers target="Copy"/>
   </js-module>
 
   <platform name="ios">
-    <info>
-Open Xcode, Go into settings, change `deployment target` to 7.0 or above and add `[Project Name]/Plugins/com.zel.copy/Bridging-Header.h` to Objective-c Bridging Header under the Swift Compiler - Code Generation options      
-    </info>
-    <config-file target="config.xml" parent="/*">
+    <config-file parent="/*" target="config.xml">
       <feature name="Copy">
-        <param name="ios-package" value="HWPCopy"/>
+        <param name="ios-package" value="Copy"/>
       </feature>
     </config-file>
-    
-    <header-file src="src/ios/Bridging-Header.h" />
+
+    <header-file src="src/ios/Bridging-Header.h"/>
     <source-file src="src/ios/Copy.swift"/>
+
   </platform>
 
 </plugin>
