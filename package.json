@@ -1,0 +1,34 @@
+{
+    "name": "cordova-plugin-clipboardswift",
+    "version": "2.1.0",
+    "description": "Use Copy to Clipboard via Swift",
+    "cordova": {
+      "id": "cordova-plugin-clipboardswift",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/EddyVerbruggen/cordova-plugin-clipboardswift.git"
+    },
+    "keywords": [
+      "Clipboard",
+      "Swift",
+      "Copy to Clipboard",
+      "ecosystem:cordova",
+      "cordova-ios"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=3.5.0"
+      }
+    ],
+    "author": "Lumi Ibishi <lumi.ibishi@zel.network> (https://github.com/Lumiboy)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Lumiboy/cordova-plugin-clipboardswift/issues"
+    },
+    "homepage": "https://github.com/Lumiboy/cordova-plugin-clipboardswift#readme"
+  }
