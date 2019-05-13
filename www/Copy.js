@@ -1,11 +1,7 @@
-/* Global Cordova */
-
-var exec = require("cordova/exec");
-
 var Copy = function(){};
 
-Copy.prototype.copy = function (code, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "Copy", "copy", [code]);
+Copy.prototype.copy = function (cp, successCallback, errorCallback) {
+    cordova.exec(successCallback, errorCallback, "Copy", "copy", [cp]);
 };
 
 module.exports = new Copy();
